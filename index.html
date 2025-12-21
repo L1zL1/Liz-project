@@ -1,86 +1,35 @@
-<!-- <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-    <header>
-        <div>
-            <h1>МойСайт</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Добро пожаловать!</h2>
-            <p>Это главная страница нашего веб-приложения.</p>
-        </section>
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Мы компания, которая занимается созданием качественных веб-решений.
-            </p>
-        </section>
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Веб-разработка</li>
-                <li>Дизайн</li>
-                <li>Консультации</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Email: info@example.com</p>
-            <p>Телефон: +7 (123) 456-78-90</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Сайт. Все права защищены.</p>
-    </footer>
-</body>
-
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revo Coffee — Персонализированный кофе</title>
+  <title>Revo Coffee — Уникальный кофе</title>
   <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="assets/img/LOGO.png" alt="Логотип Revo Coffee">
+  <header class="header">
+
+    <div class="header__logotitle">
+      <div class="header__logo">
+        <img class="logo__img" src="assets/img/LOGO.png" alt="Логотип Revo Coffee">
+      </div>
+      <h1 class="header__title">ВАШ <br><span class="header__titlespan">ПЕРСОНАЛИЗИРОВАННЫЙ</span> <br>КОФЕ</h1>
     </div>
-    <h1>ВАШ ПЕРСОНАЛИЗИРОВАННЫЙ КОФЕ</h1>
-    <img src="assets/img/banner.png" alt="баннер главной страницы">
-    <nav>
-      <img src="assets/icons/shop_cart.png" alt="Логотип Revo Coffee">
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Кофе</a></li>
-        <li><a href="#">Аксессуары</a></li>
-        <li><a href="#">Подарки</a></li>
-        <li><a href="#">Комбо</a></li>
-        <li><a href="#">Контакты</a></li>
+
+    <img class="header__banner" src="assets/img/banner.png" alt="баннер главной страницы">
+    <nav class="header__nav nav">
+      <img class="nav__icon" src="assets/icons/shop_cart.png" alt="Логотип Revo Coffee">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--active"><a class="nav__link" href="#">Главная</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">О кофе</a></li>
+        <li class="nav__item"><a class="nav__link" href="#cofee">Кофе</a></li>
+        <li class="nav__item"><a class="nav__link" href="#giftsets">Подарки</a></li>
+        <li class="nav__item"><a class="nav__link" href="#combosets">Комбо</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -88,175 +37,217 @@
   <main>
 
     <!-- COFFEE BUILD YOUR BASE -->
-    <section>
-      <p>Ваш Персонализированный Кофе</p>
-      <h2>КОФЕ СОЗДАЕТ ОСНОВУ</h2>
+    <section id="about" class="cofeebase">
+      <p class="description">Ваш Персонализированный Кофе</p>
+      <h2 class="title">КОФЕ СОЗДАЕТ ОСНОВУ</h2>
 
-      <div>
+      <div class="cofeebase__cards">
 
-        <article>
-          <img src="assets/icons/mag.png" alt="Иконка кофейный магазин">
-          <h3>Происхождение</h3>
-          <p>Эти кофейные зерна арабики и&nbsp;робусты соответствуют международным стандартам качества.</p>
+        <article class="cofeebase__cards basecard">
+          <img class="basecard__img" src="assets/icons/mag.png" alt="Иконка кофейный магазин">
+          <h3 class="basecard__title">Происхождение</h3>
+          <p class="basecard__description">Эти кофейные зерна арабики и&nbsp;робусты соответствуют международным
+            стандартам качества.</p>
         </article>
 
-        <article>
-          <img src="assets/icons/beans.png" alt="Иконка вывеска с кофейными зернами">
-          <h3>Качество</h3>
-          <p>Каждое кофейное зерно&nbsp;&mdash; результат тщательного процесса, проводимого опытным мастером-кофеваром.
+        <article class="cofeebase__cards basecard">
+          <img class="basecard__img" src="assets/icons/beans.png" alt="Иконка вывеска с кофейными зернами">
+          <h3 class="basecard__title">Качество</h3>
+          <p class="basecard__description">Каждое кофейное зерно&nbsp;&mdash; результат тщательного процесса,
+            проводимого опытным мастером-кофеваром.
           </p>
         </article>
 
-        <article>
-          <img src="assets/icons/beans_pack.png" alt="Иконка пачка кофе">
-          <h3>Зерна</h3>
-          <p>70% качества чашки кофе зависит от&nbsp;происхождения и&nbsp;качества зеленых зерен.</p>
+        <article class="cofeebase__cards basecard">
+          <img class="basecard__img" src="assets/icons/beans_pack.png" alt="Иконка пачка кофе">
+          <h3 class="basecard__title">Зерна</h3>
+          <p class="basecard__description">70% качества чашки кофе зависит от&nbsp;происхождения и&nbsp;качества зеленых
+            зерен.</p>
         </article>
 
-        <article>
-          <img src="assets/icons/IC_cofee_machine.png" alt="Иконка кофемашина">
-          <h3>Заваривание</h3>
-          <p>Кофейные зерна проходят тщательную и&nbsp;строгую процедуру обжарки и&nbsp;помола.</p>
+        <article class="cofeebase__cards basecard">
+          <img class="basecard__img" src="assets/icons/IC_cofee_machine.png" alt="Иконка кофемашина">
+          <h3 class="basecard__title">Заваривание</h3>
+          <p class="basecard__description">Кофейные зерна проходят тщательную и&nbsp;строгую процедуру обжарки
+            и&nbsp;помола.</p>
         </article>
 
       </div>
     </section>
 
     <!-- CHOOSE YOUR FAVORITE -->
-    <section>
-      <p>Выбери своего фаворита</p>
-      <h2>ИДЕАЛЬНЫЙ ВКУС</h2>
+    <section id="cofee" class="cofeecards">
 
-      <article>
-        <img src="assets/img/revo_orange.png" alt="Сорт кофе утро">
-        <div>
-          <p>99.000</p>
-          <h3>REVO Утро</h3>
-          <p>Горькое, сладкое послевкусие, цветочный аромат.</p>
-          <div>
-            <button>КУПИТЬ СЕЙЧАС</button>
-            <button>ДЕТАЛИ</button>
+      <p class="description">Выбери своего фаворита</p>
+      <h2 class="title">ИДЕАЛЬНЫЙ ВКУС</h2>
+
+      <div class="cofeecards__cards">
+        <article class="cofeecards__cards cofeecard">
+          <img class="cofeecard__img" src="assets/img/revo_yellow.png" alt="Сорт кофе утро">
+          <div class="cofeecard__tblock tblock">
+            <p class="tblock__price">99.000</p>
+            <h3 class="tblock__title">REVO Утро</h3>
+            <p class="tblock__description">Горькое, сладкое послевкусие, цветочный аромат.</p>
+            <div class="tblock__btns btns">
+              <button class="btns_buy">КУПИТЬ СЕЙЧАС</button>
+              <button class="btns_details">ДЕТАЛИ</button>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article>
-        <img src="assets/img/revo_orange.png" alt="Сорт кофе каждый день">
-        <div>
-          <p>85.000</p>
-          <h3>REVO Каждый день</h3>
-          <p>Сбалансированный вкус, горьковатое послевкусие, шоколадный аромат.</p>
-          <div>
-            <button>КУПИТЬ СЕЙЧАС</button>
-            <button>ДЕТАЛИ</button>
+        <article class="cofeecards__cards cofeecard">
+          <img class="cofeecard__img" src="assets/img/revo_blue.png" alt="Сорт кофе каждый день">
+          <div class="cofeecard__tblock tblock">
+            <p class="tblock__price">85.000</p>
+            <h3 class="tblock__title">REVO Каждый день</h3>
+            <p class="tblock__description">Сбалансированный вкус, горьковатое послевкусие, шоколадный аромат.</p>
+            <div class="tblock__btns btns">
+              <button class="btns_buy">КУПИТЬ СЕЙЧАС</button>
+              <button class="btns_details">ДЕТАЛИ</button>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article>
-        <img src="assets/img/revo_orange.png" alt="Сорт кофе начало">
-        <div>
-          <p>139.000</p>
-          <h3>REVO Начало</h3>
-          <p>Сладкое послевкусие, легкая горчинка, клубничная кислинка.</p>
-          <div>
-            <button>КУПИТЬ СЕЙЧАС</button>
-            <button>ДЕТАЛИ</button>
+        <article class="cofeecards__cards cofeecard">
+          <img class="cofeecard__img" src="assets/img/revo_orange.png" alt="Сорт кофе начало">
+          <div class="cofeecard__tblock tblock">
+            <p class="tblock__price">139.000</p>
+            <h3 class="tblock__title">REVO Начало</h3>
+            <p class="tblock__description">Сладкое послевкусие, легкая горчинка, клубничная кислинка.</p>
+            <div class="tblock__btns btns">
+              <button class="btns_buy">КУПИТЬ СЕЙЧАС</button>
+              <button class="btns_details">ДЕТАЛИ</button>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article>
-        <img src="assets/img/revo_orange.png" alt="Сорт кофе Экстра">
-        <div>
-          <p>75.000</p>
-          <h3>REVO Экстра</h3>
-          <p>Насыщенный, горький, традиционный</p>
-          <div>
-            <button>КУПИТЬ СЕЙЧАС</button>
-            <button>ДЕТАЛИ</button>
+        <article class="cofeecards__cards cofeecard">
+          <img class="cofeecard__img" src="assets/img/revo_brown.png" alt="Сорт кофе Экстра">
+          <div class="cofeecard__tblock tblock">
+            <p class="tblock__price">75.000</p>
+            <h3 class="tblock__title">REVO Экстра</h3>
+            <p class="tblock__description">Насыщенный, горький, традиционный</p>
+            <div class="tblock__btns btns">
+              <button class="btns_buy">КУПИТЬ СЕЙЧАС</button>
+              <button class="btns_details">ДЕТАЛИ</button>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
 
+      <div class="cofeecards__rectangle"></div>
     </section>
 
     <!-- GIFTSET -->
-    <section>
-      <p>Лучший подарок для лучшего друга</p>
-      <h2>Подарочный набор</h2>
+    <section id="giftsets" class="giftsetcards">
+      <p class="description">Лучший подарок для лучшего друга</p>
+      <h2 class="title">Подарочный набор</h2>
 
-      <article>
-        <img src="assets/img/revo_giftset.png" alt="Подарочный набор кофе">
-        <p>285 000 ₽</p>
-        <h3>Подарочный набор «Вьетнамский фильтрованный кофе»</h3>
-        <p>Прекрасный подарок для ценителей кофе. Revo тщательно отбирает кофейные зерна, обжаривает&nbsp;их, используя технологии и&nbsp;секреты, усвоенные от&nbsp;известных мастеров, и&nbsp;сочетает их&nbsp;с&nbsp;любовью и&nbsp;страстью кофеманов, чтобы создавать чистые чашки кофе специально для вас.</p>
-        <div>
-          <div>
-            <img src="assets/icons/IC_coffee.png" alt="Иконка кофейные зерна">
-            <p>Вид зерен<br>Изысканная смесь робусты</p>
+      <div class="giftsetcards__cards">
+        <article class="giftsetcards__cards giftcard">
+          <img class="giftcard__img" src="assets/img/revo_giftset.png" alt="Подарочный набор кофе">
+
+          <div class="giftcard__tblock">
+            <p class="giftcard__price">285 000 ₽</p>
+            <h3 class="giftcard__title">Набор «Вьетнамский фильтрованный кофе»</h3>
+            <p class="giftcard__description">Прекрасный подарок для ценителей кофе. Revo тщательно отбирает кофейные
+              зерна, обжаривает&nbsp;их, используя технологии и&nbsp;секреты, усвоенные от&nbsp;известных мастеров,
+              и&nbsp;сочетает их&nbsp;с&nbsp;любовью и&nbsp;страстью кофеманов, чтобы создавать чистые чашки кофе
+              специально для вас.</p>
+            <div class="giftcard__unics">
+              <div class="unics_unic">
+                <img class="unic__icon" src="assets/icons/IC_coffee.png" alt="Иконка кофейные зерна">
+                <p class="unic_description">Вид зерен<br>Изысканная смесь робусты</p>
+              </div>
+
+              <div class="unics_unic">
+                <img class="unic__icon" src="assets/icons/IC_Mountain.png" alt="Иконка горы">
+                <p class="unic_description">Высота<br>700-800 метров</p>
+              </div>
+            </div>
+            <div class="giftcard_btns">
+              <button class="btns_buy">КУПИТЬ СЕЙЧАС</button>
+              <button class="btns_details">ДЕТАЛИ</button>
+            </div>
           </div>
 
-          <div>
-            <img src="assets/icons/IC_Mountain.png" alt="Иконка горы">
-            <p>Высота<br>700-800 метров</p>
-          </div>
+        </article>
+        <div class="giftsetcards__tabs tabs">
+          <button class="tabs__tab tabs__tab--active tab1">1</button>
+          <button class="tabs__tab tab2">2</button>
+          <button class="tabs__tab tab3">3</button>
         </div>
-        <div>
-          <button>КУПИТЬ СЕЙЧАС</button>
-          <button>ДЕТАЛИ</button>
-        </div>
+      </div>
 
-      </article>
+      <div class="giftcard__rectangle"></div>
+
     </section>
 
     <!-- COMBO -->
-    <section>
-      <p>Ваш Персонализированный Кофе</p>
-      <h2>Комбо-наборы</h2>
+    <section id="combosets" class="cofeecombo">
+      <p class="description">Ваш Персонализированный Кофе</p>
+      <h2 class="title">Комбо-наборы</h2>
 
-      <article>
-        <img src="assets/img/combo_brown.png" alt="Комбо кофе Экстра">
-        <p>147.000</p>
-        <p>155.000</p>
-        <h3>Combo Dark</h3>
-        <p>Содержание кофеина в&nbsp;Revo Rich Flavor достаточно высокое, чтобы поддерживать вашу бодрость и&nbsp;продуктивность...</p>
-        <div>
-          <button>КУПИТЬ СЕЙЧАС</button>
-          <button>ДЕТАЛИ</button>
-        </div>
-      </article>
+      <div class="cofeecombo__cards">
+        <article class="cofeecombo__cards combocard">
+          <img class="combocard__img" src="assets/img/combo_brown.png" alt="Комбо кофе Экстра">
 
-      <article>
-        <img src="assets/img/combo_blue.png" alt="Комбо кофе Каждый день">
-        <p>147.000</p>
-        <p>155.000</p>
-        <h3>Combo Dark</h3>
-        <p>Содержание кофеина в&nbsp;Revo Rich Flavor достаточно высокое, чтобы поддерживать вашу бодрость и&nbsp;продуктивность...</p>
-        <div>
-          <button>КУПИТЬ СЕЙЧАС</button>
-          <button>ДЕТАЛИ</button>
-        </div>
-      </article>
+          <div class="cofeecombo__tblock">
+            <div class="combocard__prices">
+              <p class="combocard_prices saleprice">147.000</p>
+              <p class="combocard_prices oldprice">155.000</p>
+            </div>
+            <h3 class="combocard__title">Combo Dark</h3>
+            <p class="combocard__description">Содержание кофеина достаточно высокое, чтобы поддерживать вашу бодрость...</p>
+            <div class="combocard__btns">
+              <button class="btns_buy">КУПИТЬ СЕЙЧАС</button>
+              <button class="btns_details">ДЕТАЛИ</button>
+            </div>
+          </div>
 
-      <article>
-        <img src="assets/img/combo_red.png" alt="Комбо кофе Медовое">
-        <p>147.000</p>
-        <p>155.000</p>
-        <h3>Combo Dark</h3>
-        <p>Содержание кофеина в&nbsp;Revo Rich Flavor достаточно высокое, чтобы поддерживать вашу бодрость и&nbsp;продуктивность...</p>
-        <div>
-          <button>КУПИТЬ СЕЙЧАС</button>
-          <button>ДЕТАЛИ</button>
-        </div>
-      </article>
+        </article>
 
+        <article class="cofeecombo__cards combocard">
+          <img class="combocard__img" src="assets/img/combo_blue.png" alt="Комбо кофе Каждый день">
+
+          <div class="cofeecombo__tblock">
+            <div class="combocard__prices">
+              <p class="combocard_prices saleprice">156.000</p>
+              <p class="combocard_prices oldprice">165.000</p>
+            </div>
+            <h3 class="combocard__title">Combo Dark</h3>
+            <p class="combocard__description">Содержание кофеина достаточно высокое, чтобы поддерживать вашу бодрость...</p>
+            <div class="combocard__btns">
+              <button class="btns_buy">КУПИТЬ СЕЙЧАС</button>
+              <button class="btns_details">ДЕТАЛИ</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cofeecombo__cards combocard">
+          <img src="assets/img/combo_red.png" alt="Комбо кофе Медовое">
+
+          <div class="cofeecombo__tblock">
+            <div class="combocard__prices">
+              <p class="combocard_prices saleprice">250.000</p>
+              <p class="combocard_prices oldprice">260.000</p>
+            </div>
+            <h3 class="combocard__title">Combo Dark</h3>
+            <p class="combocard__description">Содержание кофеина достаточно высокое, чтобы поддерживать вашу бодрость...</p>
+            <div class="combocard__btns">
+              <button class="btns_buy">КУПИТЬ СЕЙЧАС</button>
+              <button class="btns_details">ДЕТАЛИ</button>
+            </div>
+          </div>
+
+        </article>
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>© Revo Coffee, 2018</p>
+  <footer id="contacts" class="footer">
+    <p class="footer__text">© Revo Coffee, 2025</p>
   </footer>
 
 </body>

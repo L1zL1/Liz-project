@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+body{
+    background-color: #F9FBFF;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header__logotitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+.logo__img{
+    width: 10vw;
+    margin-left: -3%;
+}
+
+.header__title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    line-height: 72px;
+    color: #415167;
+}
+
+.header__titlespan{
+    background-color:#c7a17a;
+    color: #f1f6ff;
+    padding: 3%;
+    margin-left: -3%;
+}
+
+.header__banner{
+    width: 50vw;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: #415167;
+    color: #f1f6ff;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* width: 20vw;*/
+    padding-left: 4vw;
+    padding-right: 8vw;
+    padding-bottom: 4vw;
+}
+
+.nav__link{
+    color: #f1f6ff;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.nav__item--active .nav__link{
+    font-weight: 600;
+}
+
+.nav__item{
+    margin-bottom: 24%;
+}
+
+.title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 5%;
+    color: #415167;
+    z-index: 1;
+}
+
+.description{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #415167;
+    z-index: 1;
+}
+
+.cofeebase, .cofeecards, .giftsetcards, .cofeecombo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.cofeebase__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.basecard{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+}
+
+.basecard__img{
+    width: 24%;
+    margin-bottom: 5%;
+}
+
+.basecard__title{
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.basecard__description{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    width: 80%;
+}
+
+.cofeecards__rectangle{
+    z-index: 0;
+    width: 28vw;
+    height: 56vw;
+    position: absolute;
+    left: 0;
+    background-color: #415167;
+    margin-top: -4%;
+}
+
+.cofeecards__cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    margin-right: -3%;
+    z-index: 1;
+}
+
+.cofeecard{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.cofeecard__img{
+width: 16vw;
+}
+
+.cofeecard__tblock{
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    background-color: #fff;
+    padding: 6%;
+    justify-content: space-between;
+}
+
+.tblock__price{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #c7a17a;
+}
+
+.tblock__title{
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #151d28;
+}
+
+.tblock__description{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #151d28;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btns_buy{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    background-color: #c7a17a;
+    border-radius: 3vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    color: #fff;
+}
+
+.btns_details{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #151d28;
+    background-color: #fff;
+    border-radius: 3vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+.giftsetcards__cards{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10vw;
+}
+
+.giftsetcards__tabs{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs__tab{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    background-color: #41516754;
+    color: #415167;
+    padding: 4vw;
+}
+
+.tabs__tab--active{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    background-color: #ffffff;
+    color: #415167;
+}
+
+.giftcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.giftcard__img{
+    position: absolute;
+    z-index: 2;
+    left: 10%;
+    padding-top: 4%;
+}
+
+.giftcard__tblock{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #151d28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 6%;
+    padding-left: 40%;
+    background-color: #fff;
+    width: 56vw;
+}
+
+.giftcard__price{
+    color: #c7a17a;
+    font-size: 24px;
+}
+
+.giftcard__title{
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.giftcard__description{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.giftcard__unics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.unics_unic{
+    display: flex;
+    flex-direction: row;
+}
+
+.giftcard_btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.giftcard__rectangle{
+        z-index: 0;
+        width: 72vw;
+        height: 54vw;
+        position: absolute;
+        left: 0;
+        background-color: #edf0f5;
+        margin-top: -6%;
+}
+
+.cofeecombo__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.combocard{
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEEF3;
+    margin-right: 5%;
+}
+
+.combocard:last-child{
+    margin-right: 0%;
+}
+
+.cofeecombo__tblock{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #151d28;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 24vw;
+    padding: 10%;
+}
+
+.combocard__prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.saleprice{
+    color: #c7a17a;
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.oldprice{
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.combocard__title{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+
+.combocard__description{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 8%;
+}
+
+.combocard__btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer{
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #151d28;
+    display: flex;
+    flex-direction: row;
+    background-color: #edf0f5;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.btns_buy:hover{
+    background-color: #415167;
+}
+
+.btns_buy:active{
+    background-color: #09172c;
+}
+
+.btns_details:hover{
+    background-color: #c7a17a;
+    color: #fff;
+}
+
+.btns_details:active{
+    background-color: #9a7c5f;
+    color: #fff;
+}
