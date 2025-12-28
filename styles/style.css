@@ -3,73 +3,92 @@
 
 /* Reset and base styles  */
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+    padding: 0px;
+    margin: 0px;
+    border: none;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Links */
 
-a, a:link, a:visited  {
+a,
+a:link,
+a:visited {
     text-decoration: none;
 }
 
-a:hover  {
+a:hover {
     text-decoration: none;
 }
 
 /* Common */
 
-aside, nav, footer, header, section, main {
-	display: block;
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-size: inherit;
-	font-weight: inherit;
+    font-weight: inherit;
 }
 
-ul, ul li {
-	list-style: none;
+ul,
+ul li {
+    list-style: none;
 }
 
 img {
-	vertical-align: top;
+    vertical-align: top;
 }
 
-img, svg {
-	max-width: 100%;
-	height: auto;
+img,
+svg {
+    max-width: 100%;
+    height: auto;
 }
 
 address {
-  font-style: normal;
+    font-style: normal;
 }
 
 /* Form */
 
-input, textarea, button, select {
-	font-family: inherit;
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
     font-size: inherit;
     color: inherit;
     background-color: transparent;
 }
 
 input::-ms-clear {
-	display: none;
+    display: none;
 }
 
 textarea {
-	resize: vertical;
+    resize: vertical;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
     display: inline-block;
     box-shadow: none;
     background-color: transparent;
@@ -78,33 +97,33 @@ button, input[type="submit"] {
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+    padding: 0;
+    border: 0;
 }
 
 label {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 legend {
-	display: block;
+    display: block;
 }
 
 input[type='file'] {
-	max-width: 100%;
+    max-width: 100%;
 }
 
-body{
+body {
     background-color: #F9FBFF;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.header__logotitle{
+.header__logotitle {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -113,33 +132,33 @@ header{
     margin-right: 5%;
 }
 
-.logo__img{
+.logo__img {
     width: 10vw;
     margin-left: -3%;
 }
 
-.header__title{
+.header__title {
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: 800;
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     line-height: 72px;
     color: #415167;
 }
 
-.header__titlespan{
-    background-color:#c7a17a;
+.header__titlespan {
+    background-color: #c7a17a;
     color: #f1f6ff;
     padding: 3%;
     margin-left: -3%;
 }
 
-.header__banner{
+.header__banner {
     width: 50vw;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: column;
     background-color: #415167;
@@ -152,22 +171,22 @@ nav{
     padding-bottom: 4vw;
 }
 
-.nav__link{
+.nav__link {
     color: #f1f6ff;
     font-family: "Nunito", sans-serif;
     font-weight: 200;
     font-size: 24px;
 }
 
-.nav__item--active .nav__link{
+.nav__item--active .nav__link {
     font-weight: 600;
 }
 
-.nav__item{
+.nav__item {
     margin-bottom: 24%;
 }
 
-.title{
+.title {
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     font-weight: 800;
@@ -176,7 +195,7 @@ nav{
     z-index: 1;
 }
 
-.description{
+.description {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -184,7 +203,10 @@ nav{
     z-index: 1;
 }
 
-.cofeebase, .cofeecards, .giftsetcards, .cofeecombo{
+.cofeebase,
+.cofeecards,
+.giftsetcards,
+.cofeecombo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,40 +214,43 @@ nav{
     margin-bottom: 10%;
 }
 
-.cofeebase__cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+.cofeebase__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 1.5rem;
+    justify-items: center;
+    width: 80%;
+
 }
 
-.basecard{
+.basecard {
     display: flex;
     flex-direction: column;
-    width: 20%;
     align-items: center;
+    width: 100%;
+    margin-bottom: 10%;
 }
 
-.basecard__img{
-    width: 24%;
+.basecard__img {
+    width: 32%;
     margin-bottom: 5%;
 }
 
-.basecard__title{
+.basecard__title {
     font-family: "Nunito", sans-serif;
     font-weight: 800;
     font-size: 20px;
 }
 
-.basecard__description{
+.basecard__description {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-size: 12px;
     text-align: center;
-    width: 80%;
+    width: 84%;
 }
 
-.cofeecards__rectangle{
+.cofeecards__rectangle {
     z-index: 0;
     width: 28vw;
     height: 56vw;
@@ -235,66 +260,71 @@ nav{
     margin-top: -4%;
 }
 
-.cofeecards__cards{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
-    margin-right: -3%;
+.cofeecards__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    gap: 1.5rem;
+    width: 88%;
+    justify-content: stretch;
     z-index: 1;
+    justify-items: center;
 }
 
-.cofeecard{
+.cofeecard {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2%;
-    margin-right: 2%;
+    column-gap: 0;
 }
 
-.cofeecard__img{
-width: 16vw;
+.cofeecard.blue,
+.cofeecard.brown {
+    margin-right: 0;
 }
 
-.cofeecard__tblock{
+.cofeecard__img {
+    width: 32%;
+}
+
+.cofeecard__tblock {
     display: flex;
     flex-direction: column;
-    width: 24vw;
+    width: 68%;
     background-color: #fff;
     padding: 6%;
     justify-content: space-between;
 }
 
-.tblock__price{
+.tblock__price {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #c7a17a;
 }
 
-.tblock__title{
+.tblock__title {
     font-family: "Nunito", sans-serif;
     font-weight: 800;
     font-size: 24px;
     color: #151d28;
 }
 
-.tblock__description{
+.tblock__description {
     font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #151d28;
 }
 
-.btns{
+.btns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.btns_buy{
+.btns_buy {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
+    font-size: 18px;
     background-color: #c7a17a;
     border-radius: 3vw;
     padding-top: 2%;
@@ -304,9 +334,10 @@ width: 16vw;
     color: #fff;
 }
 
-.btns_details{
+.btns_details {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
+    font-size: 18px;
     color: #151d28;
     background-color: #fff;
     border-radius: 3vw;
@@ -317,19 +348,20 @@ width: 16vw;
 }
 
 
-.giftsetcards__cards{
+.giftsetcards__cards {
     z-index: 1;
     display: flex;
     flex-direction: row;
     padding-left: 10vw;
 }
 
-.giftsetcards__tabs{
+.giftsetcards__tabs {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.tabs__tab{
+.tabs__tab {
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 32px;
@@ -338,7 +370,7 @@ width: 16vw;
     padding: 4vw;
 }
 
-.tabs__tab--active{
+.tabs__tab--active {
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 32px;
@@ -346,20 +378,21 @@ width: 16vw;
     color: #415167;
 }
 
-.giftcard{
+.giftcard {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.giftcard__img{
+.giftcard__img {
     position: absolute;
     z-index: 2;
     left: 10%;
     padding-top: 4%;
+    width: 32%;
 }
 
-.giftcard__tblock{
+.giftcard__tblock {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     color: #151d28;
@@ -372,114 +405,119 @@ width: 16vw;
     width: 56vw;
 }
 
-.giftcard__price{
+.giftcard__price {
     color: #c7a17a;
     font-size: 24px;
 }
 
-.giftcard__title{
+.giftcard__title {
     font-weight: 800;
     font-size: 24px;
 }
 
-.giftcard__description{
+.giftcard__description {
     font-weight: 400;
     font-size: 16px;
 }
 
-.giftcard__unics{
+.giftcard__unics {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 3%;
+
 }
 
-.unics_unic{
+.unics_unic {
     display: flex;
     flex-direction: row;
 }
 
-.giftcard_btns{
+.giftcard_btns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin-top: 3%;
+
 }
 
-.giftcard__rectangle{
-        z-index: 0;
-        width: 72vw;
-        height: 54vw;
-        position: absolute;
-        left: 0;
-        background-color: #edf0f5;
-        margin-top: -6%;
+.giftcard__rectangle {
+    z-index: 0;
+    width: 72vw;
+    height: 54vw;
+    position: absolute;
+    left: 0;
+    background-color: #edf0f5;
+    margin-top: -6%;
 }
 
-.cofeecombo__cards{
+.cofeecombo__cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.combocard{
+.combocard {
     display: flex;
     flex-direction: column;
     background-color: #EBEEF3;
     margin-right: 5%;
+    width: 24%;
 }
 
-.combocard:last-child{
+.combocard:last-child {
     margin-right: 0%;
 }
 
-.cofeecombo__tblock{
+.cofeecombo__tblock {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     color: #151d28;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    width: 24vw;
     padding: 10%;
 }
 
-.combocard__prices{
+.combocard__prices {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 2%;
 }
 
-.saleprice{
+.saleprice {
     color: #c7a17a;
     font-size: 20px;
     margin-right: 5%;
 }
 
-.oldprice{
+.oldprice {
     text-decoration: line-through;
     font-weight: 400;
 }
 
-.combocard__title{
+.combocard__title {
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 2%;
 }
 
-.combocard__description{
+.combocard__description {
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 8%;
 }
 
-.combocard__btns{
+.combocard__btns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.footer{
+.footer {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     color: #151d28;
@@ -491,20 +529,435 @@ width: 16vw;
     padding: 2%;
 }
 
-.btns_buy:hover{
+.btns_buy:hover {
     background-color: #415167;
 }
 
-.btns_buy:active{
+.btns_buy:active {
     background-color: #09172c;
 }
 
-.btns_details:hover{
+.btns_details:hover {
     background-color: #c7a17a;
     color: #fff;
 }
 
-.btns_details:active{
+.btns_details:active {
     background-color: #9a7c5f;
     color: #fff;
 }
+
+
+/* Ноутбуки (меньше 1200px) */
+@media (max-width: 1199px) {
+    .header__title {
+        font-size: 32px;
+        line-height: 64px;
+        bottom: 24%;
+    }
+
+    .nav__link {
+        font-size: 20px;
+    }
+
+    .nav__item {
+        margin-bottom: 20%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .basecard__title {
+        font-size: 18px;
+    }
+
+    .basecard__description {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .tblock__price {
+        font-size: 20px;
+    }
+
+    .tblock__title {
+        font-size: 22px;
+    }
+
+    .tblock__description {
+        font-size: 14px;
+    }
+
+    .btns_buy,
+    .btns_details {
+        font-size: 14px;
+    }
+
+    .giftsetcards__tabs{
+        height: 100%;
+    }
+
+    .tabs__tab{
+        font-size: 20px;
+    }
+
+    .tabs__tab{
+        width: 100%;
+    }
+
+    .giftcard__img{
+        left: 8%;
+    }
+
+    .giftcard__price {
+        font-size: 14px;
+    }
+    
+    .giftcard__title {
+        font-size: 18px;
+    }
+    
+    .giftcard__description {
+        font-size: 12px;
+    }
+    
+    .giftcard__unics {
+        font-size: 10px;
+    }
+    
+    .unics_unic {
+        font-size: 10px;
+    }
+    
+    .giftcard_btns {
+        font-size: 10px;
+    }
+    .giftcard__tblock{
+        padding-left: 32%;
+    }
+}
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 991px) {
+    .header__title {
+        font-size: 24px;
+        line-height: 56px;
+        bottom: 40%;
+    }
+
+    .nav__link {
+        font-size: 20px;
+    }
+
+    .nav__item {
+        margin-bottom: 18%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .basecard__title {
+        font-size: 18px;
+    }
+
+    .basecard__description {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .tblock__price {
+        font-size: 14px;
+    }
+
+    .tblock__title {
+        font-size: 18px;
+    }
+
+    .tblock__description {
+        font-size: 12px;
+    }
+
+    .btns_buy,
+    .btns_details {
+        font-size: 12px;
+    }
+
+    .giftsetcards__tabs{
+        height: 100%;
+    }
+
+    .tabs__tab{
+        font-size: 20px;
+    }
+
+    .tabs__tab{
+        width: 100%;
+    }
+
+    .giftcard__img{
+        left: 8%;
+    }
+
+    .giftcard__price {
+        font-size: 14px;
+    }
+    
+    .giftcard__title {
+        font-size: 18px;
+    }
+    
+    .giftcard__description {
+        font-size: 12px;
+    }
+    
+    .giftcard__unics {
+        font-size: 10px;
+    }
+    
+    .unics_unic {
+        font-size: 10px;
+    }
+    
+    .giftcard_btns {
+        font-size: 10px;
+    }
+    .giftcard__tblock{
+        padding-left: 32%;
+    }
+
+    .saleprice {
+        font-size: 16px;
+    }
+
+    .oldprice{
+        font-size: 14px;
+    }
+
+    .combocard__title{
+        font-size: 20px;
+    }
+
+    .combocard__description{
+font-size: 12px;
+    }
+}
+
+/* Мобильные в альбомной ориентации (меньше 768px) */
+@media (max-width: 767px) {
+    .header__title {
+        font-size: 20px;
+        line-height: 48px;
+        bottom: 56%;
+    }
+
+    .nav__link {
+        font-size: 18px;
+    }
+
+    .nav__item {
+        margin-bottom: 16%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .basecard__title {
+        font-size: 16px;
+    }
+
+    .basecard__description {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .tblock__price {
+        font-size: 14px;
+    }
+
+    .tblock__description {
+        font-size: 12px;
+    }
+
+    .btns_buy,
+    .btns_details {
+        font-size: 12px;
+    }
+
+    .giftsetcards__tabs{
+        height: 100%;
+    }
+
+    .tabs__tab{
+        font-size: 16px;
+    }
+
+    .tabs__tab{
+        width: 100%;
+    }
+
+    .giftcard__img{
+        left: 6%;
+    }
+
+    .giftcard__price {
+        font-size: 14px;
+    }
+    
+    .giftcard__title {
+        font-size: 16px;
+    }
+    
+    .giftcard__description {
+        font-size: 10px;
+    }
+    
+    .giftcard__unics {
+        font-size: 10px;
+    }
+    
+    .unics_unic {
+        font-size: 8px;
+
+    }
+    
+    .giftcard_btns {
+        font-size: 10px;
+    }
+    .giftcard__tblock{
+        padding-left: 24%;
+
+    }
+
+}
+
+/* Мобильные (меньше 576px) */
+@media (max-width: 575px) {
+    .header__title {
+        font-size: 16px;
+        line-height: 32px;
+        bottom: 70%;
+    }
+
+    .nav__link {
+        font-size: 14px;
+    }
+
+    .nav__item {
+        margin-bottom: 12%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    .basecard__title {
+        font-size: 14px;
+    }
+
+    .basecard__description {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .tblock__price {
+        font-size: 14px;
+    }
+
+    .tblock__title {
+        font-size: 16px;
+    }
+
+    .tblock__description {
+        font-size: 10px;
+    }
+
+    .btns_buy,
+    .btns_details {
+        font-size: 10px;
+    }
+
+    .giftsetcards__tabs{
+        height: 100%;
+    }
+
+    .tabs__tab{
+        font-size: 16px;
+    }
+
+    .tabs__tab{
+        width: 100%;
+    }
+
+    .giftcard__img{
+        left: 4%;
+    }
+
+    .giftcard__price {
+        font-size: 14px;
+    }
+    
+    .giftcard__title {
+        font-size: 16px;
+    }
+    
+    .giftcard__description {
+        font-size: 10px;
+    }
+    
+    .giftcard__unics {
+        font-size: 10px;
+    }
+    
+    .unics_unic {
+        font-size: 8px;
+
+    }
+    
+    .giftcard_btns {
+        font-size: 10px;
+    }
+    .giftcard__tblock{
+        padding-left: 16%;
+
+    }
+
+    
+    .saleprice {
+        font-size: 12px;
+    }
+
+    .oldprice{
+        font-size: 10px;
+    }
+
+    .combocard__title{
+        font-size: 16px;
+    }
+
+    .combocard__description{
+font-size: 10px;
+    }
+
+}
+
+/* Очень маленькие экраны (меньше 400px) */
+@media (max-width: 399px) {}
