@@ -548,6 +548,110 @@ nav {
 }
 
 
+/* Гамбургер */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    z-index: 101;
+  }
+  
+  .menu-toggle__line {
+    height: 3px;
+    background: #EBEEF3;
+  }
+  
+  /* Overlay */
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 98;
+  }
+  
+  .nav-overlay.active {
+    display: block;
+  }
+  
+  /* Scroll to top */
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #415167;
+    color: #fff;
+    font-size: 24px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+  }
+  
+  .scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+      position: fixed;
+      background-color: #415167;
+    }
+  
+    nav {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      height: 35vh;
+      width: 35%;
+      transition: .4s;
+      z-index: 100;
+    }
+  
+    nav.active {
+      right: 0;
+    }
+  
+  }
+  
+
+  /* Анимация гамбургера в крестик */
+.menu-toggle.active .menu-toggle__line:nth-child(1) {
+    transform: rotate(45deg) translate(8px,6px);
+  }
+  
+  .menu-toggle.active .menu-toggle__line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active .menu-toggle__line:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -6px);
+  }
+  
+  .menu-toggle__line {
+    transition: 0.3s ease;
+  }
+
+  .menu-toggle {
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+
+  .menu-toggle:active {
+    transform: scale(0.95);
+  }
+  
+
+
 /* Ноутбуки (меньше 1200px) */
 @media (max-width: 1199px) {
     .header__title {
